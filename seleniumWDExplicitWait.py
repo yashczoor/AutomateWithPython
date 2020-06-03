@@ -10,7 +10,6 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Firefox()
 driver.get('http://www.python.org')
 
-try:
 try: #if element is found within 10 seconds will close browser else throw error
     element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "start-shell"))
