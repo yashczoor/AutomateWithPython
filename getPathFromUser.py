@@ -11,4 +11,4 @@ def askUserForPath():
     path = filedialog.askdirectory()
     return path
 
-print(askUserForPath())
+#print(askUserForPath())
